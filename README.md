@@ -21,7 +21,7 @@ from STDIN terminating on `0` and printing the resulting id for each pair of num
 - Project requires Elixir. For installation see [the docs](https://elixir-lang.org/install.html).
 
 #### Running the CLI
-Clone the project then run the following commands in root directory.
+Clone the project then run the following commands in the root directory.
 
 1. Get project dependencies 
 `$ mix deps.get`
@@ -40,7 +40,10 @@ are found in the `TriangularStorageTest` module and uses the ExTest framework.
 To run the unit and doc tests run `$ mix test` in the project root directory.
 
 #### End to end testing
-End to end testing is done with a test driver 
+End to end testing is done with a shell script test driver. The script automatically builds the escript for
+the project and simulates STDIN.
+
+To run the test driver run `$ ./test/test_driver.sh` in the project root directory.
 
 ## Documentation
 Documentation is generated through ExDoc by running `$ mix docs` in the project root directory.
